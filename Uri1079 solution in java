@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		 int n = sc.nextInt(); //taking user input
+		 double res=0,a=0,b=0,c=0;
+		 for (int i =1;i<=n;i++) {
+			 a= sc.nextDouble();
+			 b= sc.nextDouble(); //taking three user input 
+			 c= sc.nextDouble();
+			 res = (a*2.0+b*3.0+c*5.0)/10.0; // storing result for weighted a,b,c and division 
+			 
+			 System.out.printf("%.1f\n",res);
+		 }
+
+	}
+
+}
