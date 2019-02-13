@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a,b;
+		a=sc.nextInt();
+		b=sc.nextInt();
+		boolean loop = true;
+		while(loop) {
+			if (a==0 || b==0)
+				break;
+
+			else if (a>0 && b>0) {
+				System.out.println("primeiro");
+				
+			}
+			
+			else if (a>0 && b<0) {
+				System.out.println("quarto");
+				
+			}else if (a<0 && b<0) {
+				System.out.println("terceiro");
+				
+			}
+			else
+				System.out.println("segundo");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
