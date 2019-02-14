@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n,alco=0,gas=0,disel=0;
+		System.out.println("MUITO OBRIGADO");
+		
+		n=sc.nextInt();
+		boolean loop = true;
+		while(loop) {
+			
+			if(n==4)
+				break;
+			else if (n==1)
+				alco++;
+			else if (n==2)
+				gas++;
+			else if (n==3)
+				disel++;
+			n=sc.nextInt();
+			
+		}
+		
+		System.out.println("Alcool: "+alco+"\n"+"Gasolina: "+gas+"\n"+"Diesel: "+disel);
+		
+		
+
+	}
+
+}
