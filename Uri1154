@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double res=0,count=0,n;
+		n=sc.nextDouble();
+		
+		boolean loop = true;
+		while(loop) {
+			if(n<0)
+				break;
+			else {
+				res=res+n;
+				count++;
+				n=sc.nextDouble();
+			}
+		}
+		
+		System.out.printf("%.2f\n",res/count);
+
+	}
+
+}
