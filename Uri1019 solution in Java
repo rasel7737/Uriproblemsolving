@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int res=0,hour=0,min=0;
+		hour=n/3600;
+		res=n%3600;
+		min=res/60;
+		res=res%60;
+		System.out.println(hour+":"+min+":"+res);
+		
+
+}
+}
