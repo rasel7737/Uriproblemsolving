@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i=0,n,sum=0,x,y,f1,f2;
+		n=sc.nextInt();
+		while(i!=n) {
+			x=sc.nextInt();
+			y=sc.nextInt();
+			if(x<y) {
+				f1=x;
+				f2=y;
+			}else {
+				f1=y;
+				f2=x;
+			}
+		for(int j=f1+1;j<f2;j++) {
+			if(j%2!=0)
+				sum=sum+j;
+		}
+		System.out.println(sum);
+		sum=0;
+		i++;
+		}
+	}
+
+}
