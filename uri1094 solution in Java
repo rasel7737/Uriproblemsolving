@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		double prabit,prat,pfrog;
+		int n=sc.nextInt();
+		int no,total=0,rabit=0,rat=0,frog=0;
+		char x;
+		for(int i=1;i<=n;i++) {
+			no=sc.nextInt();
+			x=sc.next().charAt(0);
+			if(x=='C') {
+				rabit+=no;
+			}
+			else if(x=='R')
+				rat+=no;
+			else if(x=='S')
+				frog+=no;
+			total=no+total;
+		}
+		prabit= (double)(rabit*100)/total;
+		prat=(double)(rat*100)/total;
+		pfrog=(double)(frog*100)/total;
+ 
+
+ 
+		System.out.print("Total: "+total+" cobaias\n");
+		System.out.print("Total de coelhos: "+rabit+"\n");
+		System.out.print("Total de ratos: "+rat+"\n");
+		System.out.print("Total de sapos: "+frog+"\n");
+		
+		
+ System.out.printf("Percentual de coelhos: %.2f",prabit);
+	System.out.print(" %\n");
+	System.out.printf("Percentual de ratos: %.2f",prat);
+	System.out.print(" %\n");
+	System.out.printf("Percentual de sapos: %.2f",pfrog);
+	System.out.print(" %\n"); 
+	}
+
+}
